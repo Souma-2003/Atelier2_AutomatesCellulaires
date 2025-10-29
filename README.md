@@ -9,7 +9,7 @@ Auteure : **Soumaya LAAKEL GAUZI** — Encadrement : **Pr. Ikram BENABDELOUAHAB*
 
 ## Sommaire 
 
-1. Implémentation de l’automate cellulaire 1D (r = 1)
+1. Implémentation de l’automate cellulairs 1D (r = 1)
 2. Implémentation de `ac_hash()` basée sur l’automate
 3. Intégration de `ac_hash()` dans la blockchain existante
 4. Comparaison AC_HASH vs SHA256 (minage)
