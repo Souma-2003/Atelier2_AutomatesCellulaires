@@ -1,6 +1,4 @@
-// ac_hash_correct.cpp 
-// Implémentation : automate cellulaire 1D (r=1) + ac_hash corrigé (256-bit digest)
-// Compile: g++ -std=c++17 -O2 ac_hash_correct.cpp -o ac_hash_correct
+
 
 #include <iostream>
 #include <vector>
