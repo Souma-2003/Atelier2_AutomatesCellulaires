@@ -1,0 +1,42 @@
+==============================================
+COMPREHENSIVE HASH FUNCTION ANALYSIS
+==============================================
+Number of tests per function: 1000
+
+Testing Original Rule 30...
+ Original Rule 30 completed
+Testing Original Rule 90...
+ Original Rule 90 completed
+Testing Original Rule 110...
+ Original Rule 110 completed
+Testing AC-Hash+ Rule 30...
+ AC-Hash+ Rule 30 completed
+Testing AC-Hash+ Rule 90...
+ AC-Hash+ Rule 90 completed
+Testing AC-Hash+ Rule 110...
+ AC-Hash+ Rule 110 completed
+
+========================================================================================================================
+FINAL RESULTS COMPARISON
+========================================================================================================================
+Hash Function            Avalanche (%)  Distribution (%)Time (ms)      Sample Hash                   Quality Score  
+------------------------------------------------------------------------------------------------------------------------
+Original Rule 30         49.76          50.21          157.43         cddecade5155125a...           80.81          
+Original Rule 90         49.79          49.84          149.78         53fc20b0b43a8034...           82.09          
+Original Rule 110        49.95          50.37          138.20         8d323a147f07bb7f...           83.77          
+AC-Hash+ Rule 30         49.83          49.94          304.86         184b04f53a321bc2...           67.55          
+AC-Hash+ Rule 90         50.02          50.03          284.19         b73de23f8f54c07c...           71.18          
+AC-Hash+ Rule 110        50.08          50.03          315.03         add4bbdf4e56fb9e...           67.52          
+========================================================================================================================
+RECOMMENDATION:
+Best performing function: Original Rule 110 
+Quality Score: 83.77/100
+
+IMPROVEMENTS IN AC-Hash+:
+ Etat etendu a 512 bits
+ Voisinage variable (3,5,7 cellules)
+ Regle dynamique adaptative basee sur l'etat
+ Permutation des bits d'entree
+ Melange additionnel ameliore
+ Finalisation etendue (20 etapes)
+ Compression 512→256 bits

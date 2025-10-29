@@ -1,0 +1,25 @@
+Analyse de la distribution des bits de ac_hash...
+Objectif: au moins 100000 bits
+Regle: 110, Etapes: 10
+
+Hashs calcules: 100, Bits analyses: 25600, Pourcentage de 1: 49.6719%
+Hashs calcules: 200, Bits analyses: 51200, Pourcentage de 1: 50.0176%
+Hashs calcules: 300, Bits analyses: 76800, Pourcentage de 1: 49.9388%
+
+=== RESULTATS DE LA DISTRIBUTION ===
+Nombre total de hashs analyses: 391
+Nombre total de bits analyses: 100096
+Nombre de bits a 1: 50004
+Nombre de bits a 0: 50092
+Pourcentage de bits a 1: 49.9560%
+Pourcentage de bits a 0: 50.0440%
+Ecart a l'equilibre parfait: 0.0440%
+Valeur du test chi-carre: 0.0774
+Seuil chi-carre (95%): 3.8410
+Distribution equilibree: OUI
+
+=== ANALYSE PAR OCTET ===
+Bits analyses par position de bit (0-255 dans le hash):
+Pourcentage min de 1 sur une position: 43.22%
+Pourcentage max de 1 sur une position: 57.29%
+Deviation maximale: 7.29%

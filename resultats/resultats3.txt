@@ -1,0 +1,229 @@
+=================================================
+         MINI BLOCKCHAIN FROM SCRATCH
+=================================================
+
+
+=== Configuration du mode de hachage ===
+1. SHA256 (Standard)
+2. AC_HASH (Automate Cellulaire)
+Choix: Regle AC_HASH (30, 90, 110): Nombre d'etapes: Mode AC_HASH configure (Regle: 110, Etapes: 3)
+
+=== DEMARRAGE DE LA BLOCKCHAIN PoW ===
+PoW_Chain initialized with Genesis Block!
+ Configuration - Difficulte: 1 | Hash: AC_HASH (Demo mode)
+
+  Mining Block 1 with difficulty 1 using AC_HASH...
+  Block mined successfully! Nonce: 44 | Hash: 0029a5ee4d4c86313fc5dfbdac3933d654c498f81eed3ea9795a6b94d5434707
+  Mining time: 0.066 seconds | Iterations: 44
+
+  Block 1 added via PoW
+  Mining Block 2 with difficulty 1 using AC_HASH...
+  Block mined successfully! Nonce: 19 | Hash: 02768317062bb2a12ca8fb5c0e4a4eaf8a00f50af15dce2362bcb0a50d657172
+  Mining time: 0.029 seconds | Iterations: 19
+
+  Block 2 added via PoW
+  Mining Block 3 with difficulty 1 using AC_HASH...
+  Block mined successfully! Nonce: 43 | Hash: 0c19c6f9aeb2abb92e5645d62712852f2d2096b8659d77fdc605078a2e2cc46f
+  Mining time: 0.065 seconds | Iterations: 43
+
+  Block 3 added via PoW
+
+PoW_Chain STATISTICS:
+  Total Blocks: 4
+  Total Transactions: 10
+  Chain Difficulty: 1
+  Consensus: PoW
+  Hash Mode: AC_HASH
+  AC_HASH Rule: 110
+  AC_HASH Steps: 3
+
+=== VALIDATION DE LA CHAINE PoW ===
+
+Validating PoW_Chain...
+   PoW_Chain is valid! (4 blocks)
+
+=== DEMARRAGE DE LA BLOCKCHAIN PoS ===
+PoS_Chain initialized with Genesis Block!
+Validators initialized with total stake: 5700 tokens
+  Selected validator for Block 1: Validator_D
+  Block 1 validated by: Validator_D (Time: 1475 us)
+
+  Block 1 added via PoS
+  Selected validator for Block 2: Validator_B
+  Block 2 validated by: Validator_B (Time: 2151 us)
+
+  Block 2 added via PoS
+  Selected validator for Block 3: Validator_C
+  Block 3 validated by: Validator_C (Time: 2397 us)
+
+  Block 3 added via PoS
+
+PoS_Chain STATISTICS:
+  Total Blocks: 4
+  Total Transactions: 10
+  Chain Difficulty: 2
+  Consensus: PoS
+  Hash Mode: AC_HASH
+  Total Validators: 4
+  AC_HASH Rule: 110
+  AC_HASH Steps: 3
+
+CURRENT STAKES DISTRIBUTION:
+----------------------------------------------------------
+      Validator       Stake Percentage
+----------------------------------------------------------
+    Validator_A        1000      17.41%
+    Validator_B     2015.00      35.07%
+    Validator_C     1515.00      26.37%
+    Validator_D     1215.00      21.15%
+----------------------------------------------------------
+Total Stake: 5745.00 tokens
+
+=== VALIDATION DE LA CHAINE PoS ===
+
+Validating PoS_Chain...
+   PoS_Chain is valid! (4 blocks)
+
+
+=== ANALYSE COMPARATIVE ===
+===============================
+Metric                 | Proof of Work        | Proof of Stake
+--------------------------------------------------------------
+Total Time (ms)        | 186 [====================] | 36 [===                 ]
+Blocks Added           | 3                    | 3                   
+Speed per Block (ms)   | 62                   | 12                  
+Hash Mode              | AC_HASH              | AC_HASH             
+Consensus              | PoW                  | PoS                 
+Chain Valid            | VALID                | VALID               
+--------------------------------------------------------------
+
+
+=== AFFICHAGE DETAILLE DES CHAINES ===
+=================================
+
+Appuyez sur Entree pour voir les details de la chaine PoW...
+PoW_Chain - BLOCKCHAIN (4 blocks)
+============================================================
+------------------------------------------------------------
+  BLOCK 0  
+  Hash: 7f9b91f51bae10711412dbb62370b94cd1f083e60a75ddf96a1dad68209fec9d
+  Previous: 0
+  Merkle Root: 195784b5c1cf958e745cb2bf147429109fbe3d130b9a15f0aa42047847504abe
+  Transactions: 1 | Nonce: 0
+  Hash Mode: AC_HASH
+  AC_HASH Rule: 110 | Steps: 3
+  Reward: 0.00 tokens
+------------------------------------------------------------
+  Transactions details:
+ From  system to founder : 1000.00 tokens   | ID: e3cfc230c0ea8bf2...
+
+------------------------------------------------------------
+  BLOCK 1  
+  Hash: 0029a5ee4d4c86313fc5dfbdac3933d654c498f81eed3ea9795a6b94d5434707
+  Previous: 7f9b91f51bae10711412dbb62370b94cd1f083e60a75ddf96a1dad68209fec9d
+  Merkle Root: b04e7d022a94550eaa378c1f6b190d14a026416acf8462a6a996e9923944ea8c
+  Transactions: 3 | Nonce: 44
+  Hash Mode: AC_HASH
+  AC_HASH Rule: 110 | Steps: 3
+  Reward: 12.50 tokens
+------------------------------------------------------------
+  Transactions details:
+ From  sen1 to rec1 : 50.50 tokens   | ID: f15b3e9b3af2322d...
+ From  sen2 to rec2 : 25.00 tokens   | ID: 307201590540d70a...
+ From  sen3 to rec3 : 15.75 tokens   | ID: 6fd6c0f13f8e0f92...
+
+------------------------------------------------------------
+  BLOCK 2  
+  Hash: 02768317062bb2a12ca8fb5c0e4a4eaf8a00f50af15dce2362bcb0a50d657172
+  Previous: 0029a5ee4d4c86313fc5dfbdac3933d654c498f81eed3ea9795a6b94d5434707
+  Merkle Root: ae27e4db2768e5ce089a2f9eaf1bc830f27ccd94f1ea0b7f8a25c96bc92a6d1d
+  Transactions: 3 | Nonce: 19
+  Hash Mode: AC_HASH
+  AC_HASH Rule: 110 | Steps: 3
+  Reward: 12.50 tokens
+------------------------------------------------------------
+  Transactions details:
+ From  sen4 to rec4 : 10.00 tokens   | ID: b97d10f7f943d771...
+ From  sen1 to rec2 : 5.25 tokens   | ID: aeb17d4ddfdd147d...
+ From  sen5 to rec5 : 8.50 tokens   | ID: b73dfedf5b5a2c1a...
+
+------------------------------------------------------------
+  BLOCK 3  
+  Hash: 0c19c6f9aeb2abb92e5645d62712852f2d2096b8659d77fdc605078a2e2cc46f
+  Previous: 02768317062bb2a12ca8fb5c0e4a4eaf8a00f50af15dce2362bcb0a50d657172
+  Merkle Root: 05aef5fb17758f9351ee25f20992f8615d6b34d05c969770b52e3dc89f79b11e
+  Transactions: 3 | Nonce: 43
+  Hash Mode: AC_HASH
+  AC_HASH Rule: 110 | Steps: 3
+  Reward: 12.50 tokens
+------------------------------------------------------------
+  Transactions details:
+ From  sen6 to rec1 : 3.00 tokens   | ID: 40e2866a6c6d50bd...
+ From  sen2 to rec5 : 12.50 tokens   | ID: 9c36d5fc6b4b2d3b...
+ From  sen5 to rec6 : 7.80 tokens   | ID: 514e235f0a809ac9...
+
+
+Appuyez sur Entree pour voir les details de la chaine PoS...
+PoS_Chain - BLOCKCHAIN (4 blocks)
+============================================================
+------------------------------------------------------------
+  BLOCK 0  
+  Hash: 7f9b91f51bae10711412dbb62370b94cd1f083e60a75ddf96a1dad68209fec9d
+  Previous: 0
+  Merkle Root: 195784b5c1cf958e745cb2bf147429109fbe3d130b9a15f0aa42047847504abe
+  Transactions: 1 | Nonce: 0
+  Hash Mode: AC_HASH
+  AC_HASH Rule: 110 | Steps: 3
+  Reward: 0.00 tokens
+------------------------------------------------------------
+  Transactions details:
+ From  system to founder : 1000.00 tokens   | ID: e3cfc230c0ea8bf2...
+
+------------------------------------------------------------
+  BLOCK 1  
+  Hash: aeb2d0c30da7ac5376d60e59fcddf83090abc858e9e6b5c5299c77b623b17a44
+  Previous: 7f9b91f51bae10711412dbb62370b94cd1f083e60a75ddf96a1dad68209fec9d
+  Merkle Root: b04e7d022a94550eaa378c1f6b190d14a026416acf8462a6a996e9923944ea8c
+  Transactions: 3 | Nonce: 0
+  Hash Mode: AC_HASH
+  AC_HASH Rule: 110 | Steps: 3
+  Validator: Validator_D
+  Reward: 15.00 tokens
+------------------------------------------------------------
+  Transactions details:
+ From  sen1 to rec1 : 50.50 tokens   | ID: f15b3e9b3af2322d...
+ From  sen2 to rec2 : 25.00 tokens   | ID: 307201590540d70a...
+ From  sen3 to rec3 : 15.75 tokens   | ID: 6fd6c0f13f8e0f92...
+
+------------------------------------------------------------
+  BLOCK 2  
+  Hash: 450cbcb5a35e8a631fd5b70419e2d2f72640d40a31f4230bb9fb289c22aa2fdb
+  Previous: aeb2d0c30da7ac5376d60e59fcddf83090abc858e9e6b5c5299c77b623b17a44
+  Merkle Root: ae27e4db2768e5ce089a2f9eaf1bc830f27ccd94f1ea0b7f8a25c96bc92a6d1d
+  Transactions: 3 | Nonce: 0
+  Hash Mode: AC_HASH
+  AC_HASH Rule: 110 | Steps: 3
+  Validator: Validator_B
+  Reward: 15.00 tokens
+------------------------------------------------------------
+  Transactions details:
+ From  sen4 to rec4 : 10.00 tokens   | ID: b97d10f7f943d771...
+ From  sen1 to rec2 : 5.25 tokens   | ID: aeb17d4ddfdd147d...
+ From  sen5 to rec5 : 8.50 tokens   | ID: b73dfedf5b5a2c1a...
+
+------------------------------------------------------------
+  BLOCK 3  
+  Hash: 7acf79d92e314f4f916fc46d5794f945a3d8fc1ae6fd5bf647f4305857fdfd21
+  Previous: 450cbcb5a35e8a631fd5b70419e2d2f72640d40a31f4230bb9fb289c22aa2fdb
+  Merkle Root: 05aef5fb17758f9351ee25f20992f8615d6b34d05c969770b52e3dc89f79b11e
+  Transactions: 3 | Nonce: 0
+  Hash Mode: AC_HASH
+  AC_HASH Rule: 110 | Steps: 3
+  Validator: Validator_C
+  Reward: 15.00 tokens
+------------------------------------------------------------
+  Transactions details:
+ From  sen6 to rec1 : 3.00 tokens   | ID: 40e2866a6c6d50bd...
+ From  sen2 to rec5 : 12.50 tokens   | ID: 9c36d5fc6b4b2d3b...
+ From  sen5 to rec6 : 7.80 tokens   | ID: 514e235f0a809ac9...
+

@@ -1,0 +1,56 @@
+
+=== Hachage par Automate Cellulaire ===
+1. Hasher une chaine
+2. Tester collisions simples
+3. Tester consistance
+0. Quitter
+Votre choix: Entrez la chaine a hacher:
+Entrez la regle (p.ex. 30, 90, 110):
+Entrez le nombre d'etapes par bloc (p.ex. 10..200): 
+Digest (256-bit hex): c222011018600000000000000000000000000000000000000000000000102330
+
+=== Hachage par Automate Cellulaire ===
+1. Hasher une chaine
+2. Tester collisions simples
+3. Tester consistance
+0. Quitter
+Votre choix: === Test collisions simples ===
+A: "POW" -> ee26fb800000000000000000000000000006b26e7188c3fa7377309f737ce09b
+B: "POS" -> 89be26800000000000000000000000000006b26e7188c3fa7377309f737c026f
+ Pas de collision (diff)
+
+A: "a" -> e38000000000000000000000000000000003830981fef377f7704df5f13c989b
+B: "b" -> 6b8000000000000000000000000000000003830981fefda3e04df137dd3dd7c7
+ Pas de collision (diff)
+
+A: "test1" -> f137cfb9be8000000000000000000000000c5f70837e0c00717c4dc626f89be1
+B: "test2" -> f0b26f89be8000000000000000000000000c5f70837e0c00717c4dc626f89be1
+ Pas de collision (diff)
+
+A: "" -> 80000000000000000000000000000000000039e3a30f84d07c2f137d7c762626
+B: " " -> 8980000000000000000000000000000000039e3a30f84d07c2f137d7c762626f
+ Pas de collision (diff)
+
+A: "abc" -> 9be26f800000000000000000000000000006b26e7188df0c47937c7c4de6e6f8
+B: "abcd" -> 3cdf11a1800000000000000000000000000e6c79a7c620189e200fb4609be266
+ Pas de collision (diff)
+
+
+=== Hachage par Automate Cellulaire ===
+1. Hasher une chaine
+2. Tester collisions simples
+3. Tester consistance
+0. Quitter
+Votre choix: === Test de consistance ===
+Input: "HY HASH_AC TEST"
+Hash1: e31fe26e375c7f60137c4df1376be380001cd8f34f8c1676e0e1d67d7c4df118
+Hash2: e31fe26e375c7f60137c4df1376be380001cd8f34f8c1676e0e1d67d7c4df118
+Consistent: PASS
+
+
+=== Hachage par Automate Cellulaire ===
+1. Hasher une chaine
+2. Tester collisions simples
+3. Tester consistance
+0. Quitter
+Votre choix: Au revoir!

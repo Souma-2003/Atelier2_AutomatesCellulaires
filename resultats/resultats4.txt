@@ -1,0 +1,162 @@
+=================================================
+         MINI BLOCKCHAIN FROM SCRATCH
+=================================================
+
+
+=== Configuration du mode de hachage ===
+1. SHA256 (Standard)
+2. AC_HASH (Automate Cellulaire)
+3. Test Performance (AC_HASH vs SHA256)
+0. Quitter
+Choix: 
+
+=== TEST DE PERFORMANCE AC_HASH vs SHA256 ===
+============================================
+
+--- Test avec SHA256 ---
+  Test bloc 1/10... 
+    Hash trouve: 09b469d31a2695513e4bb8c20b1b2253d9bb0cabcb4867468647a62e2ff86cb2
+    Nonce: 2 | Iterations: 3 | Temps: 0.085 ms
+
+  Test bloc 2/10... 
+    Hash trouve: 0ee8393d4cc0a8ae0792a6f05e3722458e6c17ae99a7fdf80d235a77f9f56d94
+    Nonce: 44 | Iterations: 45 | Temps: 0.888 ms
+
+  Test bloc 3/10... 
+    Hash trouve: 0a8e50d9daa53f8e2da48022e7b6ce4c936958f5b70c7d8f9b501ba573f5be90
+    Nonce: 13 | Iterations: 14 | Temps: 0.196 ms
+
+  Test bloc 4/10... 
+    Hash trouve: 05895aeb37bd9dd5bc3ca80a0758abbe5690d406f4fd0a7460bdd937ba1e271b
+    Nonce: 0 | Iterations: 1 | Temps: 0.022 ms
+
+  Test bloc 5/10... 
+    Hash trouve: 031159147842a64ce00eac212f820d1cc258d95c807c66e7004c9e730573b49b
+    Nonce: 7 | Iterations: 8 | Temps: 0.086 ms
+
+  Test bloc 6/10... 
+    Hash trouve: 07a915c7393bc264be0f242c2173951929065a4c7d655b0c9a65dafce9a7cf22
+    Nonce: 55 | Iterations: 56 | Temps: 0.698 ms
+
+  Test bloc 7/10... 
+    Hash trouve: 06a8f4a97bf80f7de852f21466df9b4e742dc99d1db8de42156684d5e5c288c4
+    Nonce: 48 | Iterations: 49 | Temps: 0.818 ms
+
+  Test bloc 8/10... 
+    Hash trouve: 0cea6709198cd4e680ce27a2d157724caca2ee709a79fde6b1204c2602f1541e
+    Nonce: 23 | Iterations: 24 | Temps: 0.338 ms
+
+  Test bloc 9/10... 
+    Hash trouve: 0d0489ca850ccf558c9e4ad886b32b5253a780b6df4b9914cff876efdcabb557
+    Nonce: 5 | Iterations: 6 | Temps: 0.074 ms
+
+  Test bloc 10/10... 
+    Hash trouve: 096000d75e0dc0da6a9394f8a4cefc2f802a9e2bf4ca3c4e6d92b061118a05f7
+    Nonce: 19 | Iterations: 20 | Temps: 0.28 ms
+
+
+--- Test avec AC_HASH ---
+  Test bloc 1/10... 
+    Hash trouve: 02c091443d5cc7608cf40aebdd316d709c7b5d595d9a0cdb8a8e2f3337e0ff0a
+    Nonce: 12 | Iterations: 13 | Temps: 21.91 ms
+
+  Test bloc 2/10... 
+    Hash trouve: 0f68e09cae7e3214e6de7b5f48148d05478e43d2f816ae1250808d72f23c9687
+    Nonce: 8 | Iterations: 9 | Temps: 11.56 ms
+
+  Test bloc 3/10... 
+    Hash trouve: 09118bf0be83749c1b4900f36af8260014c0e16ef9174010ebe511e61b4a0266
+    Nonce: 19 | Iterations: 20 | Temps: 26.595 ms
+
+  Test bloc 4/10... 
+    Hash trouve: 0a7ef8d665a301272433644c1babec5abc907a84b6eef8a188209ab133792ceb
+    Nonce: 6 | Iterations: 7 | Temps: 8.965 ms
+
+  Test bloc 5/10... 
+    Hash trouve: 0620d3c706d76ba351a1213d81f5f1ec78a731cd130b7f8eaed02057883acff0
+    Nonce: 9 | Iterations: 10 | Temps: 13.599 ms
+
+  Test bloc 6/10... 
+    Hash trouve: 05906f56f8977186961cbd14fdbab73534b101e5f3b00415639cfb92b3f673ad
+    Nonce: 1 | Iterations: 2 | Temps: 3.155 ms
+
+  Test bloc 7/10... 
+    Hash trouve: 026669c39f10e864e4b5e7ce15d96b07e9d5ab13654d7188023bf7afbdfb2e57
+    Nonce: 14 | Iterations: 15 | Temps: 16.898 ms
+
+  Test bloc 8/10... 
+    Hash trouve: 0f6001889636e297d8c6ab48434d3ed60f6e6a7e406ecd93fe3c28c810a0a8dc
+    Nonce: 11 | Iterations: 12 | Temps: 11.724 ms
+
+  Test bloc 9/10... 
+    Hash trouve: 029e4396988150dfb16905d25184882706310bc7b607aa7eda7695fcfd6d7055
+    Nonce: 34 | Iterations: 35 | Temps: 41.765 ms
+
+  Test bloc 10/10... 
+    Hash trouve: 0bc253ba4565d79395eb0e5bf756ae691c5822f9c1bc1740cb09b89a2ba210b2
+    Nonce: 12 | Iterations: 13 | Temps: 13.48 ms
+
+
+
+=== RAPPORT DE COMPARAISON ===
+==============================
++----------+------------------+------------------+------------------+------------------+
+| Methode  | Temps moyen (ms) | Iterations moy.  | Temps min (ms)   | Temps max (ms)   |
++----------+------------------+------------------+------------------+------------------+
+| SHA256   | 0.3485           | 22.6000          | 0.0220           | 0.8880           |
+| AC_HASH  | 16.9651          | 13.6000          | 3.1550           | 41.7650          |
++----------+------------------+------------------+------------------+------------------+
+
+=== ANALYSE COMPARATIVE DETAILLEE ===
+4.1. Temps moyen de minage de 10 blocs (difficulté 1) :
+   - SHA256: 0.3485 ms par bloc
+   - AC_HASH: 16.9651 ms par bloc
+   - Rapport: 48.6803x (AC_HASH est plus lent)
+
+4.2. Nombre moyen d'iterations pour trouver un hash valide :
+   - SHA256: 22.6000 iterations par bloc
+   - AC_HASH: 13.6000 iterations par bloc
+   - Rapport: 0.6018x (AC_HASH necessite moins d'iterations)
+
+4.3. Hashs trouves pour chaque bloc :
++-------+----------------------------------------------------------------+----------------------------------------------------------------+
+| Bloc  | SHA256 Hash                                                    | AC_HASH Hash                                                    |
++-------+----------------------------------------------------------------+----------------------------------------------------------------+
+| 1     | 09b469d31a2695513e4bb8c20b1b2253d9bb0cabcb4867468647a62e2ff86cb2 | 02c091443d5cc7608cf40aebdd316d709c7b5d595d9a0cdb8a8e2f3337e0ff0a |
+| 2     | 0ee8393d4cc0a8ae0792a6f05e3722458e6c17ae99a7fdf80d235a77f9f56d94 | 0f68e09cae7e3214e6de7b5f48148d05478e43d2f816ae1250808d72f23c9687 |
+| 3     | 0a8e50d9daa53f8e2da48022e7b6ce4c936958f5b70c7d8f9b501ba573f5be90 | 09118bf0be83749c1b4900f36af8260014c0e16ef9174010ebe511e61b4a0266 |
+| 4     | 05895aeb37bd9dd5bc3ca80a0758abbe5690d406f4fd0a7460bdd937ba1e271b | 0a7ef8d665a301272433644c1babec5abc907a84b6eef8a188209ab133792ceb |
+| 5     | 031159147842a64ce00eac212f820d1cc258d95c807c66e7004c9e730573b49b | 0620d3c706d76ba351a1213d81f5f1ec78a731cd130b7f8eaed02057883acff0 |
+| 6     | 07a915c7393bc264be0f242c2173951929065a4c7d655b0c9a65dafce9a7cf22 | 05906f56f8977186961cbd14fdbab73534b101e5f3b00415639cfb92b3f673ad |
+| 7     | 06a8f4a97bf80f7de852f21466df9b4e742dc99d1db8de42156684d5e5c288c4 | 026669c39f10e864e4b5e7ce15d96b07e9d5ab13654d7188023bf7afbdfb2e57 |
+| 8     | 0cea6709198cd4e680ce27a2d157724caca2ee709a79fde6b1204c2602f1541e | 0f6001889636e297d8c6ab48434d3ed60f6e6a7e406ecd93fe3c28c810a0a8dc |
+| 9     | 0d0489ca850ccf558c9e4ad886b32b5253a780b6df4b9914cff876efdcabb557 | 029e4396988150dfb16905d25184882706310bc7b607aa7eda7695fcfd6d7055 |
+| 10    | 096000d75e0dc0da6a9394f8a4cefc2f802a9e2bf4ca3c4e6d92b061118a05f7 | 0bc253ba4565d79395eb0e5bf756ae691c5822f9c1bc1740cb09b89a2ba210b2 |
++-------+----------------------------------------------------------------+----------------------------------------------------------------+
+
+4.4. Tableau de resultats detailles (temps et iterations) :
++-------+------------------+------------------+------------------+------------------+
+| Bloc  | SHA256 (ms)      | SHA256 (iter)    | AC_HASH (ms)     | AC_HASH (iter)   |
++-------+------------------+------------------+------------------+------------------+
+| 1     | 0.0850           | 3                | 21.9100          | 13               |
+| 2     | 0.8880           | 45               | 11.5600          | 9                |
+| 3     | 0.1960           | 14               | 26.5950          | 20               |
+| 4     | 0.0220           | 1                | 8.9650           | 7                |
+| 5     | 0.0860           | 8                | 13.5990          | 10               |
+| 6     | 0.6980           | 56               | 3.1550           | 2                |
+| 7     | 0.8180           | 49               | 16.8980          | 15               |
+| 8     | 0.3380           | 24               | 11.7240          | 12               |
+| 9     | 0.0740           | 6                | 41.7650          | 35               |
+| 10    | 0.2800           | 20               | 13.4800          | 13               |
++-------+------------------+------------------+------------------+------------------+
+
+=== RECOMMANDATION ===
+AC_HASH necessite moins d'iterations mais est plus lent.
+
+Appuyez sur Entree pour continuer...
+=== Configuration du mode de hachage ===
+1. SHA256 (Standard)
+2. AC_HASH (Automate Cellulaire)
+3. Test Performance (AC_HASH vs SHA256)
+0. Quitter
+Choix: Au revoir!

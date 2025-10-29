@@ -1,0 +1,75 @@
+=== COMPARAISON DES REGLES D'AUTOMATES CELLULAIRES ===
+Nombre de tests par regle: 500
+Nombre d'etapes: 10
+
+Regle 30 (binaire: 00011110)
+  - Automate elementaire chaotique
+  - Utilise dans Mathematica pour la generation aleatoire
+  - Comportement complexe et imprevisible
+
+Regle 90 (binaire: 01011010)
+  - Automate lineaire (règle XOR)
+  - Produit des motifs fractals (Triangle de Sierpinski)
+  - Structure mathématique simple
+
+Regle 110 (binaire: 01101110)
+  - Automate universel de classe 4
+  - Capable de calcul universel
+  - Equilibre entre ordre et chaos
+
+Execution des tests...
+=========================================
+
+Test de la regle 30 en cours...
+ Tests completes pour la regle 30
+
+Test de la regle 90 en cours...
+ Tests completes pour la regle 90
+
+Test de la regle 110 en cours...
+ Tests completes pour la regle 110
+
+=========================================
+RESULTATS COMPARATIFS
+=========================================
+
+--- Regle 30 ---
+Effet avalanche: 49.65% (ideal: 50%)
+Distribution des bits: 50.28% de 1 (ideal: 50%)
+Temps d'execution: 2620.93 ms pour 1000 hachages
+Deviation avalanche: 0.35%
+Deviation distribution: 0.28%
+
+--- Regle 90 ---
+Effet avalanche: 49.91% (ideal: 50%)
+Distribution des bits: 50.25% de 1 (ideal: 50%)
+Temps d'execution: 3525.27 ms pour 1000 hachages
+Deviation avalanche: 0.09%
+Deviation distribution: 0.25%
+
+--- Regle 110 ---
+Effet avalanche: 49.73% (ideal: 50%)
+Distribution des bits: 50.09% de 1 (ideal: 50%)
+Temps d'execution: 3205.43 ms pour 1000 hachages
+Deviation avalanche: 0.27%
+Deviation distribution: 0.09%
+
+=========================================
+ANALYSE COMPARATIVE
+=========================================
+Regle 30 - Score: 77.55
+Regle 90 - Score: 78.69
+Regle 110 - Score: 78.61
+
+ REGLE RECOMMANDEE: 90
+Pourquoi:
+- Performance la plus rapide (3525.27 ms)
+- Distribution acceptable (50.25% de 1)
+- Structure mathematique simple mais moins securisee
+
+=========================================
+TEST DE STABILITE SUR MESSAGE FIXE
+=========================================
+ Regle 30: Stabilite confirmee (hash identique pour meme entree)
+ Regle 90: Stabilite confirmee (hash identique pour meme entree)
+ Regle 110: Stabilite confirmee (hash identique pour meme entree)

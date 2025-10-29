@@ -1,0 +1,143 @@
+
+=== Automate cellulaire 1D ===
+Choisissez une regle :
+30 - Rule 30 (comportement chaotique)
+90 - Rule 90 (triangle de Sierpinski)
+110 - Rule 110 (universelle)
+0 - Quitter le programme
+Votre choix : 
+*** DEBUT DES VERIFICATIONS ***
+
+=== Verification Rule 30 ===
+Test 1 - Single 1 pattern:
+Initial: 0001000
+Step 1:  0011100
+ Rule 30 pattern verified
+
+=== Verification par table de verite ===
+ Pattern 000 -- 0  Correct
+ Pattern 001 -- 1  Correct
+ Pattern 010 -- 1  Correct
+ Pattern 011 -- 1  Correct
+ Pattern 100 -- 1  Correct
+ Pattern 101 -- 0  Correct
+ Pattern 110 -- 0  Correct
+ Pattern 111 -- 0  Correct
+
+*** RESULTATS DES VERIFICATIONS ***
+Test motifs connus: PASSE
+Test table verite: PASSE 
+
+ L'automate reproduit correctement la Rule 30 !
+
+=== Simulation Rule 30 ===
+Initial: 0001000
+Step 1:  0011100
+Step 2:  0110010
+Step 3:  1101111
+Step 4:  0001000
+Step 5:  0011100
+Step 6:  0110010
+Step 7:  1101111
+Step 8:  0001000
+Step 9:  0011100
+Step 10:  0110010
+
+Appuyez sur Entree pour continuer...
+=== Automate cellulaire 1D ===
+Choisissez une regle :
+30 - Rule 30 (comportement chaotique)
+90 - Rule 90 (triangle de Sierpinski)
+110 - Rule 110 (universelle)
+0 - Quitter le programme
+Votre choix : 
+*** DEBUT DES VERIFICATIONS ***
+
+=== Verification Rule 90 ===
+Test 1 - Single 1 pattern:
+Initial: 0001000
+Step 1:  0010100
+ Rule 90 pattern verified
+
+=== Verification par table de verite ===
+ Pattern 000 -- 0  Correct
+ Pattern 001 -- 1  Correct
+ Pattern 010 -- 0  Correct
+ Pattern 011 -- 1  Correct
+ Pattern 100 -- 1  Correct
+ Pattern 101 -- 0  Correct
+ Pattern 110 -- 1  Correct
+ Pattern 111 -- 0  Correct
+
+*** RESULTATS DES VERIFICATIONS ***
+Test motifs connus: PASSE
+Test table verite: PASSE 
+
+ L'automate reproduit correctement la Rule 90 !
+
+=== Simulation Rule 90 ===
+Initial: 0001000
+Step 1:  0010100
+Step 2:  0100010
+Step 3:  1010101
+Step 4:  1000001
+Step 5:  1100011
+Step 6:  0110110
+Step 7:  1110111
+Step 8:  0010100
+Step 9:  0100010
+Step 10:  1010101
+
+Appuyez sur Entree pour continuer...
+=== Automate cellulaire 1D ===
+Choisissez une regle :
+30 - Rule 30 (comportement chaotique)
+90 - Rule 90 (triangle de Sierpinski)
+110 - Rule 110 (universelle)
+0 - Quitter le programme
+Votre choix : 
+*** DEBUT DES VERIFICATIONS ***
+
+=== Verification Rule 110 ===
+Test 1 - Single 1 pattern:
+Initial: 0001000
+Step 1:  0011000
+ Rule 110 pattern verified
+
+=== Verification par table de verite ===
+ Pattern 000 -- 0  Correct
+ Pattern 001 -- 1  Correct
+ Pattern 010 -- 1  Correct
+ Pattern 011 -- 1  Correct
+ Pattern 100 -- 0  Correct
+ Pattern 101 -- 1  Correct
+ Pattern 110 -- 1  Correct
+ Pattern 111 -- 0  Correct
+
+*** RESULTATS DES VERIFICATIONS ***
+Test motifs connus: PASSE
+Test table verite: PASSE 
+
+ L'automate reproduit correctement la Rule 110 !
+
+=== Simulation Rule 110 ===
+Initial: 0001000
+Step 1:  0011000
+Step 2:  0111000
+Step 3:  1101000
+Step 4:  1111001
+Step 5:  0001011
+Step 6:  0011111
+Step 7:  0110001
+Step 8:  1110011
+Step 9:  0010110
+Step 10:  0111110
+
+Appuyez sur Entree pour continuer...
+=== Automate cellulaire 1D ===
+Choisissez une regle :
+30 - Rule 30 (comportement chaotique)
+90 - Rule 90 (triangle de Sierpinski)
+110 - Rule 110 (universelle)
+0 - Quitter le programme
+Votre choix : Au revoir !

@@ -1,0 +1,77 @@
+ANALYSE AC_HASH - EFFET AVALANCHE
+==================================
+=== TESTS DE BASE ===
+             Empty string: 7f79938b61cdd98922b14811dbb57479...
+              Single char: f1933f13635e65d534174e2f947709a6...
+             Short string: 6da1017b1bc2df5a5834b4ded6fd23a9...
+         With punctuation: f6d80489d56c1bddec806b66ffcabe13...
+           Longer message: 72af6b32b7b948f80f258ffdab5d6c42...
+=== TEST EFFET AVALANCHE COMPLET ===
+Comparaison entre l'ancienne et nouvelle version AC_HASH
+
+1. TESTS AVEC MESSAGES SIMILAIRES:
+Message 1: "Hello" -> b50147f8af0e8ece...
+Message 2: "World" -> c15cea13755863e1...
+Similarite: OK
+
+Message 1: "World" -> c15cea13755863e1...
+Message 2: "Test" -> f45533a5b317cf97...
+Similarite: OK
+
+Message 1: "Test" -> f45533a5b317cf97...
+Message 2: "Message" -> 298ce054c6424091...
+Similarite: OK
+
+Message 1: "Message" -> 298ce054c6424091...
+Message 2: "Avalanche" -> 090cd489261a5f9d...
+Similarite: OK
+
+Message 1: "Avalanche" -> 090cd489261a5f9d...
+Message 2: "Blockchain" -> 3e701e8d1dcc2405...
+Similarite: OK
+
+Message 1: "Blockchain" -> 3e701e8d1dcc2405...
+Message 2: "Security" -> ea000402a59cbd17...
+Similarite: OK
+
+Message 1: "Security" -> ea000402a59cbd17...
+Message 2: "Cryptography" -> 1fc5029b994a88a4...
+Similarite: OK
+
+Message 1: "Cryptography" -> 1fc5029b994a88a4...
+Message 2: "Hash" -> 3b1bf29b0dbabfae...
+Similarite: OK
+
+Message 1: "Hash" -> 3b1bf29b0dbabfae...
+Message 2: "Function" -> e43bb5ba9032c825...
+Similarite: OK
+
+
+2. TEST EFFET AVALANCHE DETAILLE:
+Progression: 10/50
+Progression: 20/50
+Progression: 30/50
+Progression: 40/50
+Progression: 50/50
+
+3. RESULTATS STATISTIQUES:
+Tests effectues: 400
+Collisions detectees: 0
+Pourcentage moyen de bits differents: 33.04%
+Minimum: 27.15%
+Maximum: 39.65%
+
+Distribution:
+ 0-10%: 0 tests (0.0%)
+10-20%: 0 tests (0.0%)
+20-30%: 39 tests (9.8%)
+30-40%: 361 tests (90.2%)
+40-50%: 0 tests (0.0%)
+50-60%: 0 tests (0.0%)
+60-70%: 0 tests (0.0%)
+70-80%: 0 tests (0.0%)
+80-90%: 0 tests (0.0%)
+90-100%: 0 tests (0.0%)
+
+4. EVALUATION FINALE:
+ INSUFFISANT: Effet avalanche trop faible
