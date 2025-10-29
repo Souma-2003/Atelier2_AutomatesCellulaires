@@ -251,13 +251,4 @@ std::string ac_hash(const std::string& input, uint32_t rule, size_t steps);
 ## 12) Mode d’exécution automatique (tests)
 
 * Le rapport contient un script d’automatisation `run_tests.bat` (Windows) qui compile, exécute et collecte les résultats dans `results.txt`.
-* **Recommandation pour GitHub / cross-platform** : ajouter `run_tests.sh` (bash) ou une cible `make test` pour lancer automatiquement :
 
-  1. compilation (`g++` / `make`),
-  2. exécution des tests pour les règles 30/90/110,
-  3. collecte des mesures (temps, avalanche, distribution) dans `results.txt` ou `results.csv`.
-
----
-
-uement (je te fournis le contenu à coller), ou
-* que je **crée les fichiers** (README.md et/ou script) et te fournisse un lien de téléchargement.
